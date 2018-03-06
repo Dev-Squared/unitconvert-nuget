@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <Version>0.1.1</Version>
+    <PackageId>UnitConvert</PackageId>
+    <Authors>John Kuefler</Authors>
+    <Company>DevSquared</Company>
+    <Product>UnitConvert.io</Product>
+    <Description>This is a library for UnitConvert - a simple, innovative api that makes it easy to convert any plain text measurement to another compatible measurement, get information about the measurement, or compare with another measurement</Description>
+    <Copyright>2018 DevSquared</Copyright>
+    <PackageProjectUrl>https://unitconvert.io/</PackageProjectUrl>
+    <PackageIconUrl>https://unitconvert.io/favicons/android-icon-192x192.png</PackageIconUrl>
+    <AssemblyVersion>0.1.1.1</AssemblyVersion>
+    <FileVersion>0.1.1.1</FileVersion>
+    <AssemblyName>UnitConvert</AssemblyName>
+    <RootNamespace>UnitConvert</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\UnitConvert.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\UnitConvert.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+  </ItemGroup>
+
+</Project>
