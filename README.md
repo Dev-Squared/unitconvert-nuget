@@ -4,7 +4,9 @@ This is a .Net Standard library for unitconvert.io - a simple, innovative api th
 ## Usage:  
 1. Get an api key from https://unitconvert.io. 
 
-2. Instantiate a UnitConvertClient: 
+2. Install UnitConvert into your project from NuGet: https://www.nuget.org/packages/UnitConvert/
+
+3. Instantiate a UnitConvertClient: 
 ```
 UnitConvertClient client = new UnitConvertClient("API_KEY");
 ```  
