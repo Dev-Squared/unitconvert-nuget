@@ -14,6 +14,6 @@ UnitConvertClient client = new UnitConvertClient("API_KEY");
 3. Call any of the following operations from the client:
 * Info: `var data = await client.GetMeasurementInfoAsync("10.352 inches");`
 * Conversion: `var data = await client.ConvertMeasurementAsync("12g", "mg");`
-* Comparison: `bool result = await c.CompareMeasurementsAsync("11 inches", ComparisonType.GreaterThan, "4 cm");`  
+* Comparison: `bool result = await client.CompareMeasurementsAsync("11 inches", ComparisonType.GreaterThan, "4 cm");`  
   
 If an invalid measurement is passed to any of the above operations, an exception will be thrown with an error message. 
