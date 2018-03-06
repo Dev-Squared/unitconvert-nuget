@@ -4,7 +4,7 @@ This is a library for unitconvert.io - a simple, innovative api that makes it ea
 ## Usage:  
 1. Get an api key from https://unitconvert.io. 
 
-2. Install UnitConvert into your project from NuGet: https://www.nuget.org/packages/UnitConvert/
+2. Install UnitConvert into your project from NuGet: https://www.nuget.org/packages/UnitConvert/ [![NuGet](https://img.shields.io/nuget/v/UnitConvert.svg?label=NuGet)](https://www.nuget.org/packages/UnitConvert/)
 
 3. Instantiate a UnitConvertClient: 
 ```
