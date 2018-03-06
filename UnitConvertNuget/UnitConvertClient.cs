@@ -14,7 +14,7 @@ namespace UnitConvert
         private HttpClient httpClient;
 
         /// <summary>
-        /// Construct a unitconvert client
+        /// Construct a unitconvert client. Any client calls will throw an exception if an invalid API Key is used.
         /// </summary>
         /// <param name="apiKey">Your unitconvert api key</param>
         public UnitConvertClient(string apiKey)
@@ -48,8 +48,8 @@ namespace UnitConvert
             }
             else
             {
-                RequestErrorObject error = JsonConvert.DeserializeObject<RequestErrorObject>(await response.Content.ReadAsStringAsync());
-                throw new Exception(error.Error);
+                Exception ex = await handleError(response);
+                throw ex;
             }
         }
 
@@ -77,8 +77,8 @@ namespace UnitConvert
             }
             else
             {
-                RequestErrorObject error = JsonConvert.DeserializeObject<RequestErrorObject>(await response.Content.ReadAsStringAsync());
-                throw new Exception(error.Error);
+                Exception ex = await handleError(response);
+                throw ex;
             }
         }
 
@@ -142,13 +142,28 @@ namespace UnitConvert
             }
             else
             {
-                RequestErrorObject error = JsonConvert.DeserializeObject<RequestErrorObject>(await response.Content.ReadAsStringAsync());
-                throw new Exception(error.Error);
+                Exception ex = await handleError(response);
+                throw ex;
             }
         }
 
 
-
+        private async Task<Exception> handleError(HttpResponseMessage response)
+        {
+            if (response.StatusCode == System.Net.HttpStatusCode.Forbidden)
+            {
+                return new Exception("Quota exceeded");
+            }
+            else if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+            {
+                return new Exception("Invalid API Key");
+            }
+            else
+            {
+                RequestErrorObject error = JsonConvert.DeserializeObject<RequestErrorObject>(await response.Content.ReadAsStringAsync());
+                return new Exception(error.Error);
+            }
+        }
         private bool attemptNumericComparison(string first, string comparer, string second, out bool canDoNumericComparison)
         {
             canDoNumericComparison = false;

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.4;netstandard1.5;netstandard1.6;netstandard2.0;net45</TargetFrameworks>
-    <Version>0.1.4</Version>
+    <Version>0.1.5</Version>
     <PackageId>UnitConvert</PackageId>
     <Authors>John Kuefler</Authors>
     <Company>DevSquared</Company>
@@ -11,8 +11,8 @@
     <Copyright>2018 DevSquared</Copyright>
     <PackageProjectUrl>https://unitconvert.io/</PackageProjectUrl>
     <PackageIconUrl>https://unitconvert.io/favicons/android-icon-192x192.png</PackageIconUrl>
-    <AssemblyVersion>0.1.4.1</AssemblyVersion>
-    <FileVersion>0.1.4.1</FileVersion>
+    <AssemblyVersion>0.1.5.1</AssemblyVersion>
+    <FileVersion>0.1.5.1</FileVersion>
     <AssemblyName>UnitConvert</AssemblyName>
     <RootNamespace>UnitConvert</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -20,7 +20,7 @@
     <RepositoryUrl>https://github.com/Dev-Squared/unitconvert-nuget</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>measurement,unit,conversion,unitconvert,api,comparison,compare,convert</PackageTags>
-    <PackageReleaseNotes>Updated target framework support</PackageReleaseNotes>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
