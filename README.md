@@ -1,5 +1,7 @@
 # UnitConvert
 This is a library for unitconvert.io - a simple, innovative api that makes it easy to convert any plain text measurement to another compatible measurement, get information about the measurement, or compare with another measurement.  
+[![Build status](https://ci.appveyor.com/api/projects/status/4vpgx9cqtgec239f?svg=true)](https://ci.appveyor.com/project/johnkuefler/unitconvert-nuget)
+
 
 ## Usage:  
 1. Get an api key from https://unitconvert.io. 
