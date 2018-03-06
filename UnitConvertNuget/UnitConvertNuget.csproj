@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
-    <Version>0.1.2</Version>
+    <TargetFrameworks>netstandard1.4;netstandard1.5;netstandard1.6;netstandard2.0</TargetFrameworks>
+    <Version>0.1.3</Version>
     <PackageId>UnitConvert</PackageId>
     <Authors>John Kuefler</Authors>
     <Company>DevSquared</Company>
@@ -11,8 +11,8 @@
     <Copyright>2018 DevSquared</Copyright>
     <PackageProjectUrl>https://unitconvert.io/</PackageProjectUrl>
     <PackageIconUrl>https://unitconvert.io/favicons/android-icon-192x192.png</PackageIconUrl>
-    <AssemblyVersion>0.1.2.1</AssemblyVersion>
-    <FileVersion>0.1.2.1</FileVersion>
+    <AssemblyVersion>0.1.3.1</AssemblyVersion>
+    <FileVersion>0.1.3.1</FileVersion>
     <AssemblyName>UnitConvert</AssemblyName>
     <RootNamespace>UnitConvert</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -20,7 +20,7 @@
     <RepositoryUrl>https://github.com/Dev-Squared/unitconvert-nuget</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>measurement,unit,conversion,unitconvert,api,comparison,compare,convert</PackageTags>
-    <PackageReleaseNotes>Small method name update</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated target framework support</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -32,7 +32,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
   </ItemGroup>
 
 </Project>
