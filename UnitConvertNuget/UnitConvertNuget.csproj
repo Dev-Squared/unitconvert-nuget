@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
     <PackageId>UnitConvert</PackageId>
     <Authors>John Kuefler</Authors>
     <Company>DevSquared</Company>
