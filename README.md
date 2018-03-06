@@ -1,5 +1,5 @@
 # UnitConvert
-This is a .Net Standard library for unitconvert.io - a simple, innovative api that makes it easy to convert any plain text measurement to another compatible measurement, get information about the measurement, or compare with another measurement.  
+This is a library for unitconvert.io - a simple, innovative api that makes it easy to convert any plain text measurement to another compatible measurement, get information about the measurement, or compare with another measurement.  
 
 ## Usage:  
 1. Get an api key from https://unitconvert.io. 
