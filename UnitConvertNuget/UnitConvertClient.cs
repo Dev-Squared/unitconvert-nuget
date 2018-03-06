@@ -89,7 +89,7 @@ namespace UnitConvert
         /// <param name="conversionType">The type of comparison to perform</param>
         /// <param name="secondMeasurement">The second measurement to compare</param>
         /// <returns>True or false. Throws exception if supplied measurement data is invalid</returns>
-        public async Task<bool> CompareMeasurement(string firstMeasurement, ComparisonType conversionType, string secondMeasurement)
+        public async Task<bool> CompareMeasurementsAsync(string firstMeasurement, ComparisonType conversionType, string secondMeasurement)
         {
             if (string.IsNullOrEmpty(firstMeasurement))
             {

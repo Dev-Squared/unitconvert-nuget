@@ -11,11 +11,16 @@
     <Copyright>2018 DevSquared</Copyright>
     <PackageProjectUrl>https://unitconvert.io/</PackageProjectUrl>
     <PackageIconUrl>https://unitconvert.io/favicons/android-icon-192x192.png</PackageIconUrl>
-    <AssemblyVersion>0.1.1.1</AssemblyVersion>
-    <FileVersion>0.1.1.1</FileVersion>
+    <AssemblyVersion>0.1.2.1</AssemblyVersion>
+    <FileVersion>0.1.2.1</FileVersion>
     <AssemblyName>UnitConvert</AssemblyName>
     <RootNamespace>UnitConvert</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseUrl>https://github.com/Dev-Squared/unitconvert-nuget/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/Dev-Squared/unitconvert-nuget</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>measurement,unit,conversion,unitconvert,api,comparison,compare,convert</PackageTags>
+    <PackageReleaseNotes>Small method name update</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
